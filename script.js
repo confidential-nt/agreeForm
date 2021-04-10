@@ -20,7 +20,7 @@ function confirmingCheck() {
   submitBtn.setAttribute("disabled", "");
 }
 
-function LoopingForAllCheck() {
+function loopingForAllCheck() {
   targetCheckboxes.forEach((checkbox) => {
     if (allChecker.checked) {
       checkbox.checked = true;
