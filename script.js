@@ -38,7 +38,7 @@ function matchmakingCheck(e) {
     },
   } = e;
 
-  if (state === "all") LoopingForAllCheck();
+  if (state === "all") loopingForAllCheck();
 
   confirmingCheck();
 }
