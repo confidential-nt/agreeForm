@@ -1,11 +1,6 @@
 const allChecker = document.querySelector("#all-check");
 const checkboxes = document.querySelectorAll("[type=checkbox]");
 
-const targetCheckBoxContainer = document.querySelector(".checkbox-container");
-const targetCheckboxes = targetCheckBoxContainer.querySelectorAll(
-  "[type=checkbox]"
-);
-
 function confirmingCheck() {
   const essentialChecker = document.querySelectorAll("[data-state=essential]");
   const submitBtn = document.querySelector("[type=submit]");
@@ -21,6 +16,10 @@ function confirmingCheck() {
 }
 
 function loopingForAllCheck() {
+  const targetCheckBoxContainer = document.querySelector(".checkbox-container");
+  const targetCheckboxes = targetCheckBoxContainer.querySelectorAll(
+    "[type=checkbox]"
+  );
   targetCheckboxes.forEach((checkbox) => {
     if (allChecker.checked) {
       checkbox.checked = true;
